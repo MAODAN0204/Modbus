@@ -1,6 +1,0 @@
-LOG 計算容量(mAH): 99753
-設備顯示放電電量(mAH): 99554
-GAGUE FullChargeCapacity(mAH): 96280
-EDV0: 2923
-EDV1: 3082
-EDV2: 3128

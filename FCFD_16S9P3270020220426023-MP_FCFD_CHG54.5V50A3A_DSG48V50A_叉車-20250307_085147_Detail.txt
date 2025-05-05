@@ -1,0 +1,15 @@
+#變更MODBUS通訊協議需考慮是否變更此計算程式
+#LOG 計算容量(mAH)通過計算放電循環中 CAP 值的累計和得到的
+#設備顯示放電電量(mAH):這是從 'AD' 列獲取的值，乘以 1000 後取整數
+#GAGUE FullChargeCapacity(mAH)直接對應'AT'
+#EDV0最接近 0% 的記錄中獲取的 'DD' 列值減去用戶輸入的 Shift 值
+#EDV1最接近 3% 的記錄中獲取的 'DD' 列值減去用戶輸入的 Shift 值
+#EDV2最接近 7% 的記錄中獲取的 'DD' 列值減去用戶輸入的 Shift 值
+#Shift=2 代表實際EDV值-2, Shift=-2 代表實際EDV值+2
+
+LOG 計算容量(mAH): 48460
+設備顯示放電電量(mAH): 48221
+GAGUE FullChargeCapacity(mAH): 45000
+EDV0: 3008
+EDV1: 3049
+EDV2: 3073

@@ -16,8 +16,8 @@ class ModbusCalculator:
         return self.df
 
     def calculate_cap_column(self):
-        # 計算CAP列，如果time是NULL則設為0
-        self.df['CAP'] = (self.df['O'] * self.df['time']) / 3600
+        # 計算電量列，如果time是NULL則設為0
+        self.df['CAP'] = (self.df['AR'] * self.df['time']) / 3600
         self.df['CAP'] = self.df['CAP'].fillna(0)
         
         # 計算SUM列，SUM(n)=SUM(n-1)+CAP(n)
